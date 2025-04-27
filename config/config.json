@@ -1,17 +1,25 @@
 {
   "browsertime": {
     "browser": "chrome",
-    "iterations": 10,
+    "iterations": 1,
     "spa": true,
-    "preScript": "scripts/login.js",
+    "preScript": ["scripts/login.js", "scripts/app.js"],
+    "postScript": ["scripts/metrics.js"],
     "chrome": {
       "timeline": true
     },
-    "cpu": true
+    "screenshot": true
   },
   "graphite": {
     "host": "127.0.0.1",
     "port": "2003",
     "addSlugToKey": true
-  }
+  },
+  "axe": {
+    "enable": false
+  },
+  "filmstrip": {
+    "showAll": true
+  },
+  "copyLatestFilesToBase": true
 }

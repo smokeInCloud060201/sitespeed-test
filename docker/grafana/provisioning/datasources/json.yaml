@@ -14,5 +14,5 @@ datasources:
   - name: json-api
     # <string, required> Sets the data source type.
     type: marcusolsson-json-datasource
-    url: https://changeme.example.com
+    url: http://localhost:3002
     editable: true

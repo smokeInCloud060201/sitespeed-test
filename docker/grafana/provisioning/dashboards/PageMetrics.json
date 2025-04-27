@@ -34,7 +34,7 @@
       "name": "VAR_SCREENSHOTTYPE",
       "type": "constant",
       "label": "screenshottype",
-      "value": "jpg",
+      "value": "png",
       "description": ""
     }
   ],
@@ -873,7 +873,7 @@
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "<a href=\"$resulturl/$testname/$base.$path.$group.$page.$browser.$connectivity.$screenshottype\">\n<img src=\"$resulturl/$testname/$base.$path.$group.$page.$browser.$connectivity.$screenshottype\"></a>",
+        "content": "<a href=\"$resulturl/$testname/$group.$page.$browser.$connectivity.$screenshottype\">\n<img src=\"$resulturl/$testname/$group.$page.$browser.$connectivity.$screenshottype\"></a>",
         "mode": "html"
       },
       "pluginVersion": "10.0.1",
@@ -913,7 +913,7 @@
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "<video controls width=\"100%\"src=\"$resulturl/$testname/$base.$path.$group.$page.$browser.$connectivity.mp4\"></video>\n",
+        "content": "<a href=\"$resulturl/$testname/$group.$page.largestContentfulPaint.$browser.$connectivity.$screenshottype\">\n<img src=\"$resulturl/$testname/$group.$page.largestContentfulPaint.$browser.$connectivity.$screenshottype\"></a>",
         "mode": "html"
       },
       "pluginVersion": "10.0.1",
@@ -929,7 +929,7 @@
           "textEditor": false
         }
       ],
-      "title": "Video",
+      "title": "Largest Contentful Paint",
       "type": "text"
     },
     {
@@ -11570,18 +11570,18 @@
       {
         "hide": 2,
         "name": "resulturl",
-        "query": "https://changeme.example.org",
+        "query": "http://localhost:3002",
         "skipUrlSync": false,
         "type": "constant",
         "current": {
-          "value": "https://changeme.example.org",
-          "text": "https://changeme.example.org",
+          "value": "http://localhost:3002",
+          "text": "http://localhost:3002",
           "selected": false
         },
         "options": [
           {
-            "value": "https://changeme.example.org",
-            "text": "https://changeme.example.org",
+            "value": "http://localhost:3002",
+            "text": "http://localhost:3002",
             "selected": false
           }
         ]
@@ -11589,18 +11589,18 @@
       {
         "hide": 2,
         "name": "screenshottype",
-        "query": "jpg",
+        "query": "png",
         "skipUrlSync": false,
         "type": "constant",
         "current": {
-          "value": "jpg",
-          "text": "jpg",
+          "value": "png",
+          "text": "png",
           "selected": false
         },
         "options": [
           {
-            "value": "jpg",
-            "text": "jpg",
+            "value": "png",
+            "text": "png",
             "selected": false
           }
         ]

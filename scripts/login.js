@@ -2,6 +2,8 @@ module.exports = async function (context, commands) {
 
     const redirectUrl = 'https://kiosk-sit3.qa.spdigital.sg/payment';
 
+    console.log("The context is ", context)
+
     await commands.navigate(redirectUrl);
     const currentUrl = await commands.js.run('return document.location.href');
 

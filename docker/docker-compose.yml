@@ -36,6 +36,16 @@ services:
       - ./graphite/conf/storage-schemas.conf:/opt/graphite/conf/storage-schemas.conf
       - ./graphite/conf/storage-aggregation.conf:/opt/graphite/conf/storage-aggregation.conf
       - ./graphite/conf/carbon.conf:/opt/graphite/conf/carbon.conf
+
+  sitespeed-server:
+    image: nginx:alpine
+    container_name: sitespeed-server
+    ports:
+      - "3002:80"
+    volumes:
+      - ../sitespeed-result:/usr/share/nginx/html:ro
+    restart: always
+
 volumes:
   grafana:
   whisper:
