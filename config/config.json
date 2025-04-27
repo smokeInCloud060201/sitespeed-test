@@ -1,0 +1,17 @@
+{
+  "browsertime": {
+    "browser": "chrome",
+    "iterations": 10,
+    "spa": true,
+    "preScript": "scripts/login.js",
+    "chrome": {
+      "timeline": true
+    },
+    "cpu": true
+  },
+  "graphite": {
+    "host": "127.0.0.1",
+    "port": "2003",
+    "addSlugToKey": true
+  }
+}
