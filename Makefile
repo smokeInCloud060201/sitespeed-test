@@ -14,3 +14,7 @@ run:
       --config config/config.json \
       --cpu \
       --slug myTest
+	make setup-static-server
+
+setup-static-server:
+	docker compose -f ./docker/docker-compose.yml up -d sitespeed-server
