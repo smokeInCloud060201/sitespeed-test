@@ -1,9 +1,10 @@
 {
   "browsertime": {
     "browser": "chrome",
-    "iterations": 10,
+    "iterations": 1,
     "spa": true,
     "preScript": "scripts/login.js",
+    "script": ["scripts/app.js"],
     "chrome": {
       "timeline": true
     },

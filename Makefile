@@ -12,4 +12,5 @@ setup-edge-driver:
 run:
 	sitespeed.io https://kiosk-sit3.qa.spdigital.sg/payment \
       --config config/config.json \
-      --slug myTest
+      --slug myTest \
+      --multi
