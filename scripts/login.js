@@ -1,3 +1,5 @@
+const dotenv = require('dotenv').config()
+
 module.exports = async function (context, commands) {
 
     const redirectUrl = 'https://kiosk-sit3.qa.spdigital.sg/payment';

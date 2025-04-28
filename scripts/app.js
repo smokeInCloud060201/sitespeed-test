@@ -1,8 +1,13 @@
+const dotenv = require('dotenv').config()
+
 module.exports = async function (context, commands) {
 
-    const redirectUrl = 'https://kiosk-sit3.qa.spdigital.sg/open-account/residential';
+    await commands.measure.start(process.env.BASE_URL + "/payment");
 
-    await commands.navigate(redirectUrl);
-    console.log("This is main app ", redirectUrl)
+    console.log("Start in app.js")
 
+
+
+    return commands.measure.stop();
 };
+
